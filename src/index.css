@@ -1,0 +1,70 @@
+body {
+  color: #BD93F9;
+  font-family:'Courier New', Courier, monospace;
+  background-color: #282A36;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+
+main {
+  margin: 20px 40px;
+}
+
+.player {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  text-align: center;
+  opacity: 0.95;
+}
+
+.player .metadata {
+  color: cornflowerblue;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 10px 0
+}
+
+.player .metadata p:nth-child(1) {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.player .metadata p:nth-child(2) {
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+.player p {
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+}
+
+.no-track {
+  display: none;
+}
+
+.tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 2px
+}
+
+.tracks button {
+  text-align: start;
+  padding: 4px 20px;
+}
